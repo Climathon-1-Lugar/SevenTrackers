@@ -7,10 +7,10 @@ class MethodController extends Controller
 {
     public function MethodController($m)
     {
-        if ($m == 'login')
+        if ($m == 'empresa')
         {
-			$mth = new UserController();
-			$mth->login();
+			$mth = new EmpresaController();
+			$mth->cadastrar();
         }
 
         if ($m == 'testando'){
