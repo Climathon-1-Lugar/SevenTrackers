@@ -2,6 +2,7 @@
 
 namespace SevenTrackers\Controller;
 use SevenTrackers\Controller\Controller;
+use SevenTrackers\Controller\ApontamentoController;
 
 class MethodController extends Controller
 {
@@ -13,19 +14,15 @@ class MethodController extends Controller
 			$mth->cadastrar();
         }
 
-        if ($m == 'testando'){
-            echo "esta funcionando";
+        if ($m == 'apontamento'){
+            $mth = new ApontamentoController;
+            $mth->index();
         }
 
         if ($m == 'cadastro')
         {
 			$mth = new UserController();
 			$mth->cadastro();
-        }
-
-        if ($m == 'index'){
-            $mth = new TreinoController();
-            $mth->index();
         }
 
         if ($m == 'Logout'){
