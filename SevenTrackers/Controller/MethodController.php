@@ -3,6 +3,8 @@
 namespace SevenTrackers\Controller;
 use SevenTrackers\Controller\Controller;
 use SevenTrackers\Controller\ApontamentoController;
+use SevenTrackers\Controller\EmpresaController;
+use SevenTrackers\Controller\TerceirosController;
 
 class MethodController extends Controller
 {
@@ -19,17 +21,16 @@ class MethodController extends Controller
             $mth->index();
         }
 
-        if ($m == 'cadastro')
+        if ($m == 'itens')
         {
-			$mth = new UserController();
-			$mth->cadastro();
+			$mth = new ItensController();
+			$mth->cadastrar();
         }
 
-        if ($m == 'Logout'){
-            $Session = new SessionController();
-            $Session->logout();
-            header("refresh: 0");
-            header("Location: /");
+        if ($m == 'terceiros')
+        {
+			$mth = new TerceirosController();
+			$mth->cadastrar();
         }
     }   
 

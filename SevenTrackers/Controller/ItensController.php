@@ -2,6 +2,8 @@
 
 namespace SevenTrackers\Controller;
 use SevenTrackers\Controller\Controller;
+use SevenTrackers\Model\ItensModel;
+use SevenTrackers\View\ItensView;
 
 class ItensController extends Controller
 {
@@ -12,14 +14,14 @@ class ItensController extends Controller
         $Codigo = $POST['Codigo']; 
         $Descricao = $POST['Descricao'];
         $data_saida = $POST['datasaida'];
-        $data_entrada = $POST['NomeF'];
-        $metodo_tratamento = $POST['NomeF'];
-        $Interno = $POST['NomeF'];
-        $Terceiro = $POST['NomeF'];
-        $Quantidade_entrada = $POST['NomeF'];
-        $Quantidade_saida = $POST['NomeF'];
-        $Periculosidade_Residuo = $POST['NomeF'];
-        $Comprovante = $POST['NomeF'];
+        $data_entrada = $POST['dataentrada'];
+        $metodo_tratamento = $POST['tratamento'];
+        $Interno = $POST['interno'];
+        $Terceiro = $POST['terceiro'];
+        $Quantidade_entrada = $POST['entrada'];
+        $Quantidade_saida = $POST['saida'];
+        $Periculosidade_Residuo = $POST['residuo'];
+        $Comprovante = $POST['comprovante'];
 
         $empresaModel = new ItensModel($Codigo, $Descricao, $data_saida, $data_entrada, $metodo_tratamento, $Interno, $Terceiro, $Quantidade_entrada, $Quantidade_saida, $Periculosidade_Residuo, $Comprovante);
         $empresaModel->InsertItens();

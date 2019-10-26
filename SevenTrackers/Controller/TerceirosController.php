@@ -2,6 +2,8 @@
 
 namespace SevenTrackers\Controller;
 use SevenTrackers\Controller\Controller;
+use SevenTrackers\Model\TerceirosModel;
+use SevenTrackers\View\TerceirosView;
 
 class TerceirosController extends Controller
 {
@@ -12,17 +14,17 @@ class TerceirosController extends Controller
         $CNPJ = $POST['CNPJ'];
         $cnae = $POST['cnae'];
         $RazaoSocial = $POST['RazaoSocial'];
-        $DataAbertura = $POST['NomeF'];
-        $Tipo = $POST['NomeF'];
-        $NatuJuridica = $POST['NomeF'];
+        $DataAbertura = $POST['dataabertura'];
+        $Tipo = $POST['tipo'];
+        $NatuJuridica = $POST['juridica'];
 
 
 
-        $empresaModel = new EmpresaModel($NomeF,$CNPJ,$cnae,$RazaoSocial,$DataAbertura,$Tipo,$NatuJuridica);
+        $empresaModel = new TerceirosModel($NomeF,$CNPJ,$cnae,$RazaoSocial,$DataAbertura,$Tipo,$NatuJuridica);
         $empresaModel->InsertTerceiros();
 
-        $empresaView = new EmpresaView();
-        $empresaView->ViewTerceiros('Empresa');
+        $empresaView = new TerceirosView();
+        $empresaView->ViewTerceiros('Terceiros');
 
     }
 }

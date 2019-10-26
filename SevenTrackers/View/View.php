@@ -40,7 +40,7 @@ abstract class View
                 $y = 0;
                 $x = 0;
                 $file1 = $files[1];
-                while ($y <= 1){
+                while ($y <= 6){
               
                 $file1 = str_replace(" { $x } ", $values[$z][$x], $file1);
                 

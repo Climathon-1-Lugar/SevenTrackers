@@ -6,49 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/form2.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/shop-item.css" rel="stylesheet">
     <title>Itens</title>
 </head>
+
 <body>
-    <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Codigo</label>
-          <input type="text" class="form-control" name="Codigo" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-
-          <label for="exampleFormControlTextarea1">Descrição</label>
-          <textarea class="form-control" name="Descricao" id="exampleFormControlTextarea1" rows="3"></textarea>
-
-          <label for="exampleFormControlInput1">Data de Entrada</label>
-          <input type="date" class="form-control" name="dataestrada" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-
-          <label for="exampleFormControlInput1">Data de Saida</label>
-          <input type="date" class="form-control" name="datasaida" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-          
-          <label for="exampleFormControlInput1">Metodo de tratamento</label>
-          <input type="text" class="form-control" name="tratamento" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-
-          <label for="exampleFormControlSelect1">Interno</label>
-          <select class="form-control" name="interno" id="exampleFormControlSelect1">
+    <div id="cabecalho">
+        <h1 style="color: white;">Insumos</h1>
+      </div>
+    <form action="/?m=itens&p" method="POST">
+        <div class="form">
+          <div class="border">
+          <label for="exampleFormControlInput1">Codigo</label><br>
+          <input type="text"  name="Codigo" id="exampleFormControlInput1">
+          <br>
+          <label for="exampleFormControlInput1">Data de Entrada</label><br>
+          <input type="date"  name="dataentrada" id="exampleFormControlInput1">
+          <br>
+          <label for="exampleFormControlInput1">Data de Saida</label><br>
+          <input type="date"  name="datasaida" id="exampleFormControlInput1">
+          <br>
+          <label for="exampleFormControlInput1">Metodo de tratamento</label><br>
+          <input type="text"  name="tratamento" id="exampleFormControlInput1">
+          <br>
+          <label for="exampleFormControlSelect1">Interno</label><br>
+          <select  name="interno" id="exampleFormControlSelect1">
             <option>Sim</option>
             <option>Não</option>
           </select>
-
-          <label for="exampleFormControlInput1">Terceiro</label>
-          <input type="text" class="form-control" name="terceiro" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-
-          <label for="exampleFormControlInput1">Quantidade de Entrada</label>
-          <input type="text" class="form-control" name="entrada" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-
-          <label for="exampleFormControlInput1">Quantidade de Saida</label>
-          <input type="text" class="form-control" name="saida" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-
-          <label for="exampleFormControlInput1">Periculosidade do Resíduo</label>
-          <input type="text" class="form-control" name="residuo" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-
-          <label for="exampleFormControlInput1">Comprovante</label>
-          <input type="text" class="form-control" name="comprovante" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+          <br>
+          <label for="exampleFormControlInput1">Terceiro</label><br>
+          <input type="text"  name="terceiro" id="exampleFormControlInput1">
+          <br>
+          <label for="exampleFormControlInput1">Quantidade de Entrada</label><br>
+          <input type="text"  name="entrada" id="exampleFormControlInput1">
+          <br>
+          <label for="exampleFormControlInput1">Quantidade de Saida</label><br>
+          <input type="text"  name="saida" id="exampleFormControlInput1">
+          <br>
+          <label for="exampleFormControlInput1">Periculosidade do Resíduo</label><br>
+          <input type="text"  name="residuo" id="exampleFormControlInput1">
+          <br>
+          <label for="exampleFormControlInput1">Comprovante</label><br>
+          <input type="text"  name="comprovante" id="exampleFormControlInput1">
+          <br><br>
+          <input type="submit" value="Enviar">
+          </div>
         </div>
 
       </form>

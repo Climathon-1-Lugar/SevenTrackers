@@ -6,36 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/shop-item.css" rel="stylesheet">
+
     <title>Empresa</title>
 </head>
 <body>
-    <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Nome Fantasia</label>
-          <input type="text" class="form-control" name="NomeF"id="exampleFormControlInput1" placeholder="">
-
-          <label for="exampleFormControlInput1">CNPJ</label>
-          <input type="text" class="form-control" name="CNPJ"id="exampleFormControlInput1" placeholder="">
-
-          <label for="exampleFormControlInput1">Cnae</label>
-          <input type="text" class="form-control" name="cnae" id="exampleFormControlInput1" placeholder="">
-
-          <label for="exampleFormControlInput1">Razão Social</label>
-          <input type="text" class="form-control" name="RasaoSocial"id="exampleFormControlInput1" placeholder="Comercio de material de alumínio">
-
-          <label for="exampleFormControlInput1">Data de abertura</label>
-          <input type="date" class="form-control" name="dataabertura" id="exampleFormControlInput1" placeholder="10/09/2001">
-
-          <label for="exampleFormControlInput1">Tipo</label>
-          <input type="text" class="form-control" name="tipo" id="exampleFormControlInput1" placeholder="">
-          
-          <label for="exampleFormControlInput1">Natureza Juridica</label>
-          <input type="text" class="form-control" name="juridica" id="exampleFormControlInput1" placeholder="">
-
-          <input type="submit" value="Enviar">
+  <div id="cabecalho">
+    <h1 style="color: white;">Empresa</h1>  
+  </div>
+    <form action="/?m=empresa&p" method="POST">
+        <div class="form">
+          <div class="border">
+          <label for="exampleFormControlInput1">Nome Fantasia</label> <br>
+          <input type="text" name="NomeF"id="exampleFormControlInput1" placeholder="">
+          <br>
+          <label for="exampleFormControlInput1">CNPJ</label> <br>
+          <input type="text"  name="CNPJ"id="exampleFormControlInput1" placeholder="">
+            <br>
+          <label for="exampleFormControlInput1">Cnae</label> <br>
+          <input type="text"  name="cnae" id="exampleFormControlInput1" placeholder="">
+          <br>
+          <label for="exampleFormControlInput1">Razão Social</label> <br>
+          <input type="text"  name="RazaoSocial"id="exampleFormControlInput1" placeholder="">
+          <br>
+          <label for="exampleFormControlInput1">Data de abertura</label> <br>
+          <input type="date"  name="dataabertura" id="exampleFormControlInput1" placeholder="10/09/2001">
+          <br>
+          <label for="exampleFormControlInput1">Tipo</label> <br>
+          <input type="text"  name="tipo" id="exampleFormControlInput1" placeholder="">
+          <br>
+          <label for="exampleFormControlInput1">Natureza Juridica</label> <br>
+          <input type="text"  name="juridica" id="exampleFormControlInput1" placeholder="">
+          <br>
+          <br>
+          <input class="btn button inputs" type="submit" value="Enviar">
+          </div>
         </div>
        
       </form>

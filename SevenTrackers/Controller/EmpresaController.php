@@ -2,6 +2,8 @@
 
 namespace SevenTrackers\Controller;
 use SevenTrackers\Controller\Controller;
+use SevenTrackers\Model\EmpresaModel;
+use SevenTrackers\View\EmpresaView;
 
 class EmpresaController extends Controller
 {
@@ -12,9 +14,9 @@ class EmpresaController extends Controller
         $CNPJ = $POST['CNPJ'];
         $cnae = $POST['cnae'];
         $RazaoSocial = $POST['RazaoSocial'];
-        $DataAbertura = $POST['NomeF'];
-        $Tipo = $POST['NomeF'];
-        $NatuJuridica = $POST['NomeF'];
+        $DataAbertura = $POST['dataabertura'];
+        $Tipo = $POST['tipo'];
+        $NatuJuridica = $POST['juridica'];
 
 
 
