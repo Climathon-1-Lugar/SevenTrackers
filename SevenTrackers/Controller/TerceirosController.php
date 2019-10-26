@@ -3,7 +3,7 @@
 namespace SevenTrackers\Controller;
 use SevenTrackers\Controller\Controller;
 
-class EmpresaController extends Controller
+class TerceirosController extends Controller
 {
     public function cadastrar()
     {
@@ -19,10 +19,10 @@ class EmpresaController extends Controller
 
 
         $empresaModel = new EmpresaModel($NomeF,$CNPJ,$cnae,$RazaoSocial,$DataAbertura,$Tipo,$NatuJuridica);
-        $empresaModel->InsertEmpresa();
+        $empresaModel->InsertTerceiros();
 
         $empresaView = new EmpresaView();
-        $empresaView->ViewEmpresa('Empresa');
+        $empresaView->ViewTerceiros('Empresa');
 
     }
 }

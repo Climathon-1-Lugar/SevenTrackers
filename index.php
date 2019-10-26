@@ -1,8 +1,8 @@
 <?php
 
-use GymGride\Controller\PageController;
-use GymGride\Controller\MethodController;
-use GymGride\Controller\TestController;
+use SevenTrackers\Controller\PageController;
+use SevenTrackers\Controller\MethodController;
+use SevenTrackers\Controller\TestController;
 
 if(!isset($_GET['p']) || !isset($_GET['m'])){
     $_GET['p'] = '';

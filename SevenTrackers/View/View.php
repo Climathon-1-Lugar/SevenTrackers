@@ -6,19 +6,19 @@ abstract class View
 {
     public function mostrar($name = 'index')
     {
-        $file2 = file_get_contents("GymGride/View/$name.html");
+        $file2 = file_get_contents("SevenTrackers/View/$name.html");
         echo($file2);
     }
 
     public function render($arquivo1, $arquivo2)
     {
         if(!empty($arquivo1)){
-            $file1 = file_get_contents("GymGride/View/content/$arquivo1.html");
+            $file1 = file_get_contents("SevenTrackers/View/content/$arquivo1.html");
         }else{
             $file1 = '';
         }
         
-        $file2 = file_get_contents("GymGride/View/$arquivo2.html");
+        $file2 = file_get_contents("SevenTrackers/View/$arquivo2.html");
 
         $array[0] = $file1;
         $array[1] = $file2;
